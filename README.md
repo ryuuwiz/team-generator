@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Random Team Generator with Vanilla Javascript & Bootstrap 5.
+Random Team Generator using Vanilla Javascript & Bootstrap 5.
 
 ## Features
 
