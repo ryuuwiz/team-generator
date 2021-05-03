@@ -21,20 +21,17 @@
       crossorigin="anonymous"
     />
 
-    <title>Random Team Generator</title>
+    <title>Team Generator</title>
   </head>
   <body>
     <div class="container p-3">
-      <h1 class="h1 mb-4">
-        <i class="fa fa-random"></i> Random Team Generator
-      </h1>
-
+      <header class="mb-3">
+        <h1 class="fw-bolder"><i class="fa fa-random"></i> Team Generator</h1>
+        <p>Randomize member each team</p>
+      </header>
       <form id="Form">
-        <div class="alert alert-danger d-none" role="alert">
-          Please Fill All Required Field
-        </div>
         <div class="mb-3">
-          <label for="MemberGroupInput" class="form-label"
+          <label for="MemberGroupInput" class="form-label fw-bold"
             >How many member each team?</label
           >
           <input
@@ -44,10 +41,13 @@
             aria-describedby="MemberGroupInput"
             min="1"
             required
+            placeholder="1"
           />
         </div>
         <div class="mb-3">
-          <label for="MemberListInput" class="form-label">Member list</label>
+          <label for="MemberListInput" class="form-label fw-bold"
+            >Member list</label
+          >
           <textarea
             class="form-control"
             placeholder="Input member list here"
@@ -57,7 +57,8 @@
             cols="1"
             required
           ></textarea>
-          <div id="MemberListInput" class="form-text">
+
+          <div id="MemberListInput" class="form-text fst-italic">
             Input member list separated with new lines.
           </div>
         </div>
@@ -70,9 +71,21 @@
             Generate
           </button>
         </div>
+        <div class="alert alert-danger d-none" role="alert">
+          Please Fill All Required Field
+        </div>
       </form>
 
       <div id="Group"></div>
+
+      <footer class="mt-4 text-center">
+        <p>Simple Team Generator by ryuuwiz</p>
+        <p>
+          <a href="https://github.com/ryuuwiz">
+            <i class="fab fa-github fa-2x text-dark"></i>
+          </a>
+        </p>
+      </footer>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->

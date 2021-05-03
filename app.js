@@ -75,7 +75,7 @@ function renderTeam(arr) {
     const h2 = document.createElement("h2");
     const p = document.createElement("p");
 
-    Group.className = "row row-cols-2 row-cols-lg-5 g-2 g-lg-3";
+    Group.className = "mt-3 row row-cols-2 row-cols-lg-5 g-2 g-lg-3";
     div.className = "col bg-light border mx-auto p-3";
 
     Group.appendChild(div);
