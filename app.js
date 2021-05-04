@@ -49,8 +49,12 @@ function Randomize() {
     .replace(/^\s+|\s+$/gm, "")
     .split("\n");
 
-  // Convert Group input into Number
-  let MemberGroup = parseInt(MemberGroupInput.value);
+  // Convert from array lenght divide group input and Math Ceil them
+  let MemberGroup = Math.ceil(
+    parseFloat(arrMemberList.length / MemberGroupInput.value)
+  );
+
+  console.log(MemberGroup);
 
   // Suffle the Arrays
   let shuffledArr = shuffleArray(arrMemberList);
