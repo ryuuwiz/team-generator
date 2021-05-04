@@ -6,7 +6,7 @@ Random Team Generator using Vanilla Javascript & Bootstrap 5.
 
 ## Features
 
-- Randomize member each team
+- Randomize group
 
 ## Author
 
