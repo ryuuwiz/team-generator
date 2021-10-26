@@ -1,17 +1,50 @@
-# Random Team Generator
+# Welcome to Random Team Generator App
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT/License-yellow.svg)](https://www.mit.edu/~amini/LICENSE.md)
 
-Random Team Generator using Vanilla Javascript & Bootstrap 5.
+> Generate Teams
 
-## Features
+## Built With
 
-- Randomize group
+- [Vite](https://vitejs.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Lodash](https://lodash.com/)
+- [Bootstrap](https://getbootstrap.com/)
+
+## Project setup
+
+```sh
+npm install
+```
+
+## Compiles and hot-reloads for development
+
+```sh
+npm run dev
+```
+
+## Compiles and minifies for production
+
+```sh
+npm run build
+```
+
+## Compiles and minifies for preview production
+
+```sh
+npm run serve
+```
 
 ## Author
 
-- [Ryu Kurnianto](https://github.com/ryuuwiz)
+👤 **Ryuuwiz**
 
-## License
+## Show your support
 
-This project is open source and available under the [MIT License](LICENSE.md).
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2021 [Ryu Kurnianto](https://github.com/ryuuwiz).
+
+This project is [MIT](https://www.mit.edu/~amini/LICENSE.md) licensed.
