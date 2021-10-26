@@ -48,3 +48,7 @@ Give a ⭐️ if this project helped you!
 Copyright © 2021 [Ryu Kurnianto](https://github.com/ryuuwiz).
 
 This project is [MIT](https://www.mit.edu/~amini/LICENSE.md) licensed.
+
+---
+
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
