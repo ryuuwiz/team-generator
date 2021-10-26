@@ -44,21 +44,25 @@ const render = (arr: string[][]): void => {
 };
 
 // EVENT LISTENER
-submitBtn.addEventListener("click", (e) => {
+submitBtn.addEventListener("click", (e: MouseEvent): void => {
   e.preventDefault();
 
-  if (groupSize.value == "" || items.value == "") {
+  if (groupSize.value === "" || items.value === "") {
     form.reset();
     groupWrapper.innerHTML = "";
 
     alert.classList.remove("d-none");
     groupSize.classList.add("is-invalid");
     items.classList.add("is-invalid");
+
+    setTimeout(() => {
+      alert.classList.add("d-none");
+    }, 3000);
+  } else {
+    alert.classList.add("d-none");
+    groupSize.classList.remove("is-invalid");
+    items.classList.remove("is-invalid");
+
+    render(generateGroups());
   }
-
-  alert.classList.add("d-none");
-  groupSize.classList.remove("is-invalid");
-  items.classList.remove("is-invalid");
-
-  render(generateGroups());
 });
