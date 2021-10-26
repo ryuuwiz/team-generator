@@ -1,102 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
-    />
-
-    <title>Team Generator</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
   </head>
   <body>
-    <div class="container p-3">
-      <header class="mb-3">
-        <h1 class="fw-bolder">
-          <i class="fa fa-random"></i> Random Team Generator
-        </h1>
-      </header>
-      <form id="Form">
-        <div class="mb-3">
-          <label for="MemberGroupInput" class="form-label fw-bold"
-            >Groups</label
-          >
-          <input
-            type="number"
-            class="form-control"
-            id="MemberGroupInput"
-            aria-describedby="MemberGroupInput"
-            min="1"
-            required
-            placeholder="1"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="MemberListInput" class="form-label fw-bold"
-            >Member list</label
-          >
-          <textarea
-            class="form-control"
-            placeholder="Input member list here"
-            id="MemberListInput"
-            aria-describedby="MemberListInput"
-            rows="6"
-            cols="1"
-            required
-          ></textarea>
-
-          <div id="MemberListInput" class="form-text fst-italic">
-            Input member list separated with new lines.
-          </div>
-        </div>
-        <div class="d-grid gap-2 col-6 mx-auto m-4">
-          <button
-            type="submit"
-            class="btn btn-primary btn-lg rounded-pill"
-            id="SubmitButton"
-          >
-            Generate
-          </button>
-        </div>
-        <div class="alert alert-danger d-none" role="alert">
-          Please Fill All Required Field
-        </div>
-      </form>
-
-      <div id="Group"></div>
-
-      <footer class="mt-4 text-center">
-        <p>Random Team Generator by ryuuwiz</p>
-        <p>
-          <a href="https://github.com/ryuuwiz">
-            <i class="fab fa-github fa-2x text-dark"></i>
-          </a>
-        </p>
-      </footer>
-    </div>
-
-    <!-- Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- App -->
-    <script src="./app.js"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
