@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT/License-yellow.svg)](https://www.mit.edu/~amini/LICENSE.md)
 
-> Generate Teams
+> Generate random teams
 
 ## Built With
 
