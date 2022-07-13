@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <div
@@ -26,10 +28,10 @@ export default function Navbar() {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a href="/index.html">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="/how-to-use.html">How To Use</a>
+              <Link href="/how-to-use">How To Use</Link>
             </li>
             <li>
               <a
@@ -48,10 +50,10 @@ export default function Navbar() {
       <div className="navbar-end hidden md:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <a href="/index.html">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="/how-to-use.html">How To Use</a>
+            <Link href="/how-to-use">How To Use</Link>
           </li>
           <li>
             <a href="https://github.com/ryuuwiz/team-generator" target="_blank">
