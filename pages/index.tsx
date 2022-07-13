@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Form from "../components/Form";
 import Items from "../components/Items";
+import Team from "../components/Team";
 
 const Home: NextPage = () => {
   return (
@@ -13,64 +14,10 @@ const Home: NextPage = () => {
       <section className="p-6 flex justify-center flex-col">
         <div className="divider mt-2 mb-4"></div>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
-          <div
-            className="card bg-accent text-accent-content shadow-xl"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <div className="card-body">
-              <h2 className="card-title">Team 1</h2>
-              <ul>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div
-            className="card bg-accent text-accent-content shadow-xl"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
-            <div className="card-body">
-              <h2 className="card-title">Team 2</h2>
-              <ul>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div
-            className="card bg-accent text-accent-content shadow-xl"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <div className="card-body">
-              <h2 className="card-title">Team 3</h2>
-              <ul>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-              </ul>
-            </div>
-          </div>
-          <div
-            className="card bg-accent text-accent-content shadow-xl"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
-            <div className="card-body">
-              <h2 className="card-title">Team 4</h2>
-              <ul>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-              </ul>
-            </div>
-          </div>
+          <Team />
+          <Team />
+          <Team />
+          <Team />
         </div>
         <button className="btn btn-wide btn-success mx-auto mt-4 rounded gap-2">
           <svg
