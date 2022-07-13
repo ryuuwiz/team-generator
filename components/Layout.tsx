@@ -15,7 +15,7 @@ export default function Layout({ children }: Props): JSX.Element {
     AOS.init();
   }, []);
   return (
-    <div className="md:container md:mx-auto md:px-4" data-theme="light">
+    <div className="md:container md:mx-auto md:px-4">
       <Head>
         <title>Team Generator</title>
         <meta charSet="UTF-8" />
