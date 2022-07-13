@@ -3,13 +3,14 @@ import { persist } from "zustand/middleware";
 
 interface ThemeStore {
   dark: boolean;
+  toggleDarkMode: () => void;
 }
 
 const useStore = create<ThemeStore>()(
   persist(
     (set, get) => ({
       dark: false,
-      addAFish: () => set({ dark: !get().dark }),
+      toggleDarkMode: () => set({ dark: !get().dark }),
     }),
     {
       name: "tg-theme-storage",
