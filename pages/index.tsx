@@ -1,23 +1,12 @@
 import type { NextPage } from "next";
 import Form from "../components/Form";
+import Items from "../components/Items";
 
 const Home: NextPage = () => {
   return (
     <div className="mt-2">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-2">
-        <section
-          className="p-5 bg-base-200 rounded-lg shadow"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <h2 className="font-bold text-xl mb-2 px-1 text-base-content">
-            Items
-          </h2>
-          <textarea
-            className="textarea textarea-primary border-2 w-full h-48"
-            placeholder="Type here, each item separated with a new line."
-          ></textarea>
-        </section>
+        <Items />
         <Form />
       </div>
 
