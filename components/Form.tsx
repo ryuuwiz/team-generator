@@ -1,6 +1,6 @@
-import GearIcon from "./GearIcon";
+import GenerateButton from "./GenerateButton";
 import GroupsInput from "./GroupsInput";
-import ShuffleIcon from "./ShuffleIcon";
+import RerunButton from "./RerunButton";
 
 export default function Form() {
   return (
@@ -12,14 +12,8 @@ export default function Form() {
       <section data-aos="fade-up" data-aos-delay="200">
         <div className="form-control flex flex-col justify-center">
           <GroupsInput />
-          <button className="btn btn-block mt-4 btn-primary rounded gap-2">
-            <GearIcon />
-            Generate
-          </button>
-          <button className="btn btn-block mt-4 btn-secondary rounded gap-2">
-            <ShuffleIcon />
-            Rerun
-          </button>
+          <GenerateButton />
+          <RerunButton />
         </div>
       </section>
     </form>
