@@ -48,7 +48,9 @@ export default function Navbar() {
             <li>
               <div className="form-control">
                 <label className="label cursor-pointer flex flex-start">
-                  <span className="label-text mx-3">Theme</span>
+                  <span className="label-text mx-3">
+                    {dark ? "Dark" : "Light"} Mode
+                  </span>
                   <input
                     type="checkbox"
                     className="toggle"
@@ -79,7 +81,11 @@ export default function Navbar() {
           </li>
           <li>
             <label className="swap swap-rotate">
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                onChange={toggleDarkMode}
+                checked={!dark}
+              />
 
               <svg
                 className="swap-on fill-current w-6 h-6"
