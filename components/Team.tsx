@@ -1,7 +1,7 @@
 export default function Team() {
   return (
     <div
-      className="card bg-accent text-accent-content shadow-xl"
+      className="card bg-primary text-primary-content shadow-xl"
       data-aos="zoom-in"
       data-aos-delay="100"
     >
