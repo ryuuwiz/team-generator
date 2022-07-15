@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { ReactElement, useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 // AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -7,10 +7,10 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 type Props = {
-  children: ReactElement;
+  children: ReactNode;
 };
 
-export default function Layout({ children }: Props): JSX.Element {
+export default function Layout({ children }: Props) {
   useEffect(() => {
     AOS.init();
   }, []);
