@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTeamStore } from "../store/TeamStore";
 
 export default function Items() {
-  const [value, setValue] = useState<string>("");
+  const [value, setValue] = useState("");
   const addItems = useTeamStore((state) => state.addItems);
 
   function handleInput(data: string): void {
