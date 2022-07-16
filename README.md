@@ -1,54 +1,34 @@
-# Welcome to Random Team Generator App
+<h1 align="center">Team Generator</h1>
+<div align="center">
+<img src="https://img.shields.io/github/forks/ryuuwiz/team-generator?style=for-the-badge"/>
+<img src="https://img.shields.io/github/stars/ryuuwiz/team-generator?style=for-the-badge"/>
+<img src="https://img.shields.io/github/license/ryuuwiz/team-generator?style=for-the-badge"/>
+</div>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT/License-yellow.svg)](https://www.mit.edu/~amini/LICENSE.md)
+The Team Generator is a simple tool for making teams randomly.
 
-> Generate random teams
+# Built with
 
-## Built With
+- NextJS
+- TypeScript
+- Zustand
+- TailwindCSS
+- DaisyUI
+- AOS
 
-- [Vite](https://vitejs.dev/)
-- [Typescript](https://www.typescriptlang.org/)
-- [Lodash](https://lodash.com/)
-- [Bootstrap](https://getbootstrap.com/)
+URL :
 
-## Project setup
+# Contribution
 
-```sh
-npm install
-```
+Let's contribute, please select an _Issue_ and a _Pull Request_.
 
-## Compiles and hot-reloads for development
+See guide [how to contribute on GitHub](https://www.dataschool.io/how-to-contribute-on-github/)
 
-```sh
-npm run dev
-```
+# License
 
-## Compiles and minifies for production
+MIT
+© 2022 Ryu K
 
-```sh
-npm run build
-```
+# Donation
 
-## Compiles and minifies for preview production
-
-```sh
-npm run serve
-```
-
-## Author
-
-👤 **Ryuuwiz**
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-## 📝 License
-
-Copyright © 2021 [Ryu Kurnianto](https://github.com/ryuuwiz).
-
-This project is [MIT](https://www.mit.edu/~amini/LICENSE.md) licensed.
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+[Saweria](https://saweria.co/ryuuwiz)
