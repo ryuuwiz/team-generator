@@ -1,11 +1,7 @@
-import { useState } from "react";
+import { useTeamStore } from "../store/TeamStore";
 
 export default function Items() {
-  const [value, setValue] = useState("");
-
-  function handleInput(data: string): void {
-    setValue(data);
-  }
+  const { items, addItems } = useTeamStore((state) => state);
 
   return (
     <section
@@ -17,8 +13,8 @@ export default function Items() {
       <textarea
         className="textarea textarea-primary border-2 w-full h-48"
         placeholder="Type here, each item separated with a new line."
-        onChange={(e) => handleInput(e.target.value)}
-        value={value}
+        value={items}
+        onChange={(e) => addItems(e.target.value)}
       ></textarea>
     </section>
   );

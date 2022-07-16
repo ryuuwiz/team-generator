@@ -2,16 +2,20 @@ import create from "zustand";
 import { devtools } from "zustand/middleware";
 
 interface TeamStore {
-  items: string | null;
+  items: string;
   groups: number;
   teams: string[][] | null;
+  addItems: (item: string) => void;
+  addGroups: (size: number) => void;
 }
 
 const useStore = create<TeamStore>()(
   devtools((set) => ({
-    items: null,
+    items: "",
     groups: 0,
     teams: null,
+    addItems: (item) => set({ items: item }),
+    addGroups: (size) => set({ groups: Math.abs(size) }),
   }))
 );
 
