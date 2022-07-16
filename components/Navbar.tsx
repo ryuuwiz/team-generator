@@ -41,6 +41,7 @@ export default function Navbar() {
               <a
                 href="https://github.com/ryuuwiz/team-generator"
                 target="_blank"
+                rel="noreferrer"
               >
                 Github
               </a>
@@ -73,7 +74,11 @@ export default function Navbar() {
             <Link href="/how-to-use">How To Use</Link>
           </li>
           <li>
-            <a href="https://github.com/ryuuwiz/team-generator" target="_blank">
+            <a
+              href="https://github.com/ryuuwiz/team-generator"
+              target="_blank"
+              rel="noreferrer"
+            >
               Github
             </a>
           </li>
