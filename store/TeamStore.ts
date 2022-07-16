@@ -1,22 +1,17 @@
 import create from "zustand";
 import { devtools } from "zustand/middleware";
 
-export type TeamStore = {
-  items: string[];
-  teams: string[][];
-  addItems: (item: string) => void;
-};
+interface TeamStore {
+  items: string | null;
+  groups: number;
+  teams: string[][] | null;
+}
 
 const useStore = create<TeamStore>()(
-  devtools((set, get) => ({
-    items: [],
-    teams: [],
-
-    // Convert string params to array element
-    addItems: (item) =>
-      set({
-        items: item !== "" ? item.replace(/^\s+|\s+$/gm, "").split("\n") : [],
-      }),
+  devtools((set) => ({
+    items: null,
+    groups: 0,
+    teams: null,
   }))
 );
 
