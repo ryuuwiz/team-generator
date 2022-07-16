@@ -1,6 +1,5 @@
 import GenerateButton from "./GenerateButton";
 import GroupsInput from "./GroupsInput";
-import RerunButton from "./RerunButton";
 
 export default function Form() {
   return (
@@ -13,7 +12,6 @@ export default function Form() {
         <div className="form-control flex flex-col justify-center">
           <GroupsInput />
           <GenerateButton />
-          <RerunButton />
         </div>
       </section>
     </div>
