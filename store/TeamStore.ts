@@ -12,7 +12,7 @@ interface TeamStore {
 const useStore = create<TeamStore>()(
   devtools((set) => ({
     items: "",
-    groups: 0,
+    groups: 1,
     teams: null,
     addItems: (item) => set({ items: item }),
     addGroups: (size) => set({ groups: Math.abs(size) }),

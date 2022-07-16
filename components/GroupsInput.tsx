@@ -1,4 +1,7 @@
+import { useTeamStore } from "../store/TeamStore";
+
 export default function GroupsInput() {
+  const { groups, addGroups } = useTeamStore((state) => state);
   return (
     <>
       <label className="label">
@@ -10,7 +13,8 @@ export default function GroupsInput() {
         type="number"
         placeholder="1"
         className="input input-bordered border-base-content rounded w-full"
-        min={1}
+        onChange={(e) => addGroups(Number(e.target.value))}
+        value={groups}
       />
     </>
   );
