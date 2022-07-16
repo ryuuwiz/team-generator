@@ -16,7 +16,7 @@ The Team Generator is a simple tool for making teams randomly.
 - DaisyUI
 - AOS
 
-URL :
+URL : https://team-generator-nine.vercel.app/
 
 # Contribution
 
