@@ -28,15 +28,10 @@ const HowToUse: NextPage = () => {
       </section>
       <section className="my-8" data-aos="fade-up" data-aos-delay="400">
         <h2 className="font-bold text-2xl">3. Generate</h2>
-        <p>To make and view the output, click generate.</p>
-      </section>
-      <section className="my-8" data-aos="fade-up" data-aos-delay="500">
-        <h2 className="font-bold text-2xl">4. Rerun</h2>
-        <p>Click "rerun" to re-shuffle the groups.</p>
-      </section>
-      <section className="my-8" data-aos="fade-up" data-aos-delay="600">
-        <h2 className="font-bold text-2xl">5. Export to CSV</h2>
-        <p>To turn all groups into a spreadsheet, click "Export to CSV."</p>
+        <p>
+          To make and view the output, click generate. You can rerun with click
+          generate again.
+        </p>
       </section>
     </div>
   );
