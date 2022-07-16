@@ -6,7 +6,7 @@ import { useThemeStore } from "../store/ThemeStore";
 function MyApp({ Component, pageProps }: AppProps) {
   const dark = useThemeStore((state) => state.dark);
   return (
-    <div data-theme={dark ? "dark" : "light"}>
+    <div data-theme={dark ? "dark" : "light"} className="min-h-screen h-full">
       <Layout>
         <Component {...pageProps} />
       </Layout>
