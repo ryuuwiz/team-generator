@@ -39,6 +39,7 @@ export default function Layout({ children }: Props) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <Navbar />

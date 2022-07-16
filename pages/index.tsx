@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import DownloadIcon from "../components/DownloadIcon";
 import Form from "../components/Form";
 import Items from "../components/Items";
 import Team from "../components/Team";
@@ -23,10 +22,6 @@ const Home: NextPage = () => {
               ))
             : ""}
         </div>
-        <button className="btn btn-wide btn-success mx-auto mt-4 rounded gap-2">
-          <DownloadIcon />
-          Export to CSV
-        </button>
       </section>
     </div>
   );

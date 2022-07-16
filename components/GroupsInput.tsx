@@ -10,8 +10,7 @@ export default function GroupsInput() {
         type="number"
         placeholder="1"
         className="input input-bordered border-base-content rounded w-full"
-        min="1"
-        value="1"
+        min={1}
       />
     </>
   );
