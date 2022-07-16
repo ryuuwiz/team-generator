@@ -6,7 +6,7 @@ export default function ClearAllButton() {
     <>
       <button
         type="button"
-        className="btn btn-block mt-4 btn-danger rounded gap-2"
+        className="btn btn-block btn-error mt-4 text-error-content rounded gap-2"
         onClick={clearAll}
       >
         <svg
