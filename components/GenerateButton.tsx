@@ -13,6 +13,7 @@ export default function GenerateButton() {
         type="button"
         className="btn btn-block mt-4 btn-primary rounded gap-2"
         onClick={handleGenerate}
+        disabled={items === ""}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

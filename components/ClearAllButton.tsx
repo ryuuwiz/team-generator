@@ -1,13 +1,14 @@
 import { useTeamStore } from "../store/TeamStore";
 
 export default function ClearAllButton() {
-  const { clearAll } = useTeamStore((state) => state);
+  const { items, clearAll } = useTeamStore((state) => state);
   return (
     <>
       <button
         type="button"
         className="btn btn-block btn-error mt-4 text-error-content rounded gap-2"
         onClick={clearAll}
+        disabled={items === ""}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
