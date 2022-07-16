@@ -10,6 +10,7 @@ interface TeamStore {
   addItems: (item: string) => void;
   addGroups: (size: number) => void;
   generateTeams: () => void;
+  clearAll: () => void;
 }
 
 const createTeam = (data: string, size: number): string[][] =>
@@ -25,6 +26,12 @@ const useStore = create<TeamStore>()(
     generateTeams: () =>
       set({
         teams: createTeam(get().items, get().groups),
+      }),
+    clearAll: () =>
+      set({
+        items: "",
+        groups: 1,
+        teams: [],
       }),
   }))
 );

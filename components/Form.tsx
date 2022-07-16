@@ -1,3 +1,4 @@
+import ClearAllButton from "./ClearAllButton";
 import GenerateButton from "./GenerateButton";
 import GroupsInput from "./GroupsInput";
 
@@ -12,6 +13,7 @@ export default function Form() {
         <div className="form-control flex flex-col justify-center">
           <GroupsInput />
           <GenerateButton />
+          <ClearAllButton />
         </div>
       </section>
     </div>
