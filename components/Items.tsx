@@ -11,7 +11,7 @@ export default function Items() {
     >
       <h2 className="font-bold text-xl mb-2 px-1 text-base-content">Items</h2>
       <textarea
-        className="textarea textarea-bordered w-full h-48"
+        className="textarea textarea-primary border-2 w-full h-48"
         placeholder="Type here, each item separated with a new line."
         value={items}
         onChange={(e) => addItems(e.target.value)}
