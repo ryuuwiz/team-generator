@@ -4,7 +4,7 @@ import RerunButton from "./RerunButton";
 
 export default function Form() {
   return (
-    <form
+    <div
       className="bg-base-200 p-5 rounded-lg shadow"
       data-aos="fade-up"
       data-aos-delay="200"
@@ -16,6 +16,6 @@ export default function Form() {
           <RerunButton />
         </div>
       </section>
-    </form>
+    </div>
   );
 }

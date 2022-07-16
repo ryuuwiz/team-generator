@@ -1,7 +1,19 @@
+import { useTeamStore } from "../store/TeamStore";
+
 export default function GenerateButton() {
+  const { items, generateTeams } = useTeamStore((state) => state);
+
+  const handleGenerate = () => {
+    if (items === "") return;
+    generateTeams();
+  };
   return (
     <>
-      <button className="btn btn-block mt-4 btn-primary rounded gap-2">
+      <button
+        type="button"
+        className="btn btn-block mt-4 btn-primary rounded gap-2"
+        onClick={handleGenerate}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
