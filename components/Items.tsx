@@ -11,6 +11,7 @@ export default function Items() {
     >
       <h2 className="font-bold text-xl mb-2 px-1 text-base-content">Items</h2>
       <textarea
+        data-cy="itemsInput"
         className="textarea textarea-primary border-2 w-full h-48"
         placeholder="Type here, each item separated with a new line."
         value={items}

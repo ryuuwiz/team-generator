@@ -10,11 +10,12 @@ export default function GroupsInput() {
         </span>
       </label>
       <input
+        data-cy="groupsInput"
         type="number"
-        placeholder="1"
+        placeholder="0"
         className="input input-bordered border-2 border-primary rounded w-full"
         onChange={(e) => addGroups(Number(e.target.value))}
-        value={groups}
+        value={String(groups)}
       />
     </>
   );

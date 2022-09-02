@@ -5,6 +5,7 @@ export default function ClearAllButton() {
   return (
     <>
       <button
+        data-cy="clearAllBtn"
         type="button"
         className="btn btn-block btn-error mt-4 text-error-content rounded gap-2"
         onClick={clearAll}
