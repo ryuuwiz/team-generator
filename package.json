@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cypress": "cypress open"
+    "test:e2e": "cypress open"
   },
   "dependencies": {
     "aos": "^2.3.4",
