@@ -31,3 +31,5 @@ describe("Generator Functionality", () => {
     cy.get("[data-cy='clearAllBtn']").should("be.disabled");
   });
 });
+
+export {};

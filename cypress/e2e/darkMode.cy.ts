@@ -80,3 +80,5 @@ describe("Dark mode mobile", () => {
     });
   });
 });
+
+export {};
