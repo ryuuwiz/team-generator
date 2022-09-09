@@ -7,6 +7,7 @@ export default function Team({ team, index }: Props) {
   const teamId = index + 1;
   return (
     <div
+      data-cy="team"
       className="card bg-primary text-primary-content shadow-xl"
       data-aos="zoom-in"
       data-aos-delay={teamId + "00"}

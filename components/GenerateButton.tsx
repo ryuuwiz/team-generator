@@ -10,6 +10,7 @@ export default function GenerateButton() {
   return (
     <>
       <button
+        data-cy="generateBtn"
         type="button"
         className="btn btn-block mt-4 btn-primary rounded gap-2"
         onClick={handleGenerate}

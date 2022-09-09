@@ -12,7 +12,11 @@ export default function Navbar() {
     >
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost md:hidden">
+          <label
+            tabIndex={0}
+            className="btn btn-ghost md:hidden"
+            data-cy="dropdownBtn"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -48,7 +52,10 @@ export default function Navbar() {
             </li>
             <li>
               <div className="form-control">
-                <label className="label cursor-pointer flex flex-start">
+                <label
+                  className="label cursor-pointer flex flex-start"
+                  data-cy="darkModeMobile"
+                >
                   <span className="label-text mx-3">Theme</span>
                   <input
                     type="checkbox"
@@ -83,7 +90,7 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <label className="swap swap-rotate">
+            <label className="swap swap-rotate" data-cy="darkModeDesktop">
               <input type="checkbox" onChange={toggleDarkMode} checked={dark} />
 
               <svg
